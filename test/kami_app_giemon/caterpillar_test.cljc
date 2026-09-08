@@ -1,5 +1,5 @@
 (ns kami-app-giemon.caterpillar-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.lang.text] [clojure.test :refer [deftest testing is]]
             [kami-app-giemon.caterpillar :as c]))
 
 (deftest body-part-count
@@ -15,7 +15,7 @@
 
 (deftest wheel-ids-are-unique
   (let [ids (map :id (c/caterpillar-body-parts))
-        wheel-ids (filter #(clojure.string/starts-with? % "cat_wh_") ids)]
+        wheel-ids (filter #(kotoba.lang.text/starts-with? % "cat_wh_") ids)]
     (is (= 12 (count wheel-ids)))
     (is (= 12 (count (set wheel-ids))))))
 
