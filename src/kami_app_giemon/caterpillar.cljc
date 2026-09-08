@@ -9,7 +9,7 @@
   See `kami-app-giemon.armcrawler` for the part-map/exclusion conventions
   shared by every model namespace in this restoration."
   (:require [kami-app-giemon.geom :as g]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def armor [0.22 0.25 0.29])
 (def rubber [0.12 0.12 0.13])
@@ -37,7 +37,7 @@
        (for [[si tz] (map-indexed vector [-0.132 0.132])
              [wi wx] (map-indexed vector wheel-xs)]
          (let [s (if (zero? si) "l" "r")
-               s-cap (str/upper-case s)]
+               s-cap (str/upper s)]
            (cyl-part (str "cat_wh_" s wi) (str "Drive Wheel " s-cap (inc wi))
                      steel 0.021 0.052 [wx 0.020 tz] rot90x))))
      [(box-part "cat_elec" "Electronics Bay" [0.10 0.35 0.15]
