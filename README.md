@@ -57,5 +57,5 @@ coverage of the ported geometry/mold-field kernels instead.
 ## Develop
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
