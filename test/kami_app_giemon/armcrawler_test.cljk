@@ -1,5 +1,5 @@
 (ns kami-app-giemon.armcrawler-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [kami-app-giemon.armcrawler :as ac]))
 
 (deftest chassis-part-count-and-ids

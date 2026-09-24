@@ -1,5 +1,5 @@
 (ns kami-app-giemon.hitogata-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [kami-app-giemon.hitogata :as h]))
 
 (deftest legs-part-count

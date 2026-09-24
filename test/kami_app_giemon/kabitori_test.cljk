@@ -1,5 +1,5 @@
 (ns kami-app-giemon.kabitori-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [kami-app-giemon.geom :as g]
             [kami-app-giemon.kabitori :as k]
             [kami-app-giemon.mold-field :as mf]))

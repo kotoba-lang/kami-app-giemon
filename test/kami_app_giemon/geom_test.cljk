@@ -1,5 +1,5 @@
 (ns kami-app-giemon.geom-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [kami-app-giemon.geom :as g]))
 
 (deftest v3-basics
