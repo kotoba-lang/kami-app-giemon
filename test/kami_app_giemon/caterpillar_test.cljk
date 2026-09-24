@@ -1,5 +1,5 @@
 (ns kami-app-giemon.caterpillar-test
-  (:require [kotoba.lang.text] [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.lang.text] [kotoba.test :refer [deftest testing is]]
             [kami-app-giemon.caterpillar :as c]))
 
 (deftest body-part-count
